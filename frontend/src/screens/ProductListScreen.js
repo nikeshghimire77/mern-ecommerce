@@ -49,9 +49,12 @@ const ProductListScreen = ({ history, match }) => {
         </Col>
 
         <Col className='text-right'>
-          <Button className='my-3' onClick={createProductHandler}>
-            <i className='fas fa-plus'></i>Create Product
-          </Button>
+          <LinkContainer to={`/admin/products/create`}>
+            <Button className='my-3' onClick={createProductHandler}>
+              <i className='fas fa-plus mr-2' style={{ color: 'green' }}></i>{' '}
+              Add Product
+            </Button>
+          </LinkContainer>
         </Col>
       </Row>
       {loadingDelete && <Loader />}
