@@ -1,4 +1,4 @@
-# Contact Keeper
+# E-commerce 
 
 > Full stack MERN e-commerce with React hooks, JWT authentication.
 
